@@ -1,0 +1,31 @@
+.contactsWrapper {
+    height: 27rem;
+    border: 1px solid;
+    background-color: #f7f8f9;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.contactsContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 10px;
+    width: 80%;
+    min-height: 300px;
+}
+
+.formWrapper input, .formWrapper textarea {
+    width: 80%;
+}
