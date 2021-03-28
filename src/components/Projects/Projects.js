@@ -22,6 +22,7 @@ const Projects = () => {
     const projectsForRender = projects.map(pr => <Project
         projectLogo={pr.projectLogo}
         name={pr.name}
+        key={pr.name}
         description={pr.description}/>)
 
     return (

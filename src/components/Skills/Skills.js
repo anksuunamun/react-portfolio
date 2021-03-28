@@ -22,7 +22,9 @@ const Skills = (props) => {
         },
     ]
 
-    const skillItems = skills.map(skill => <Skill skillIcon={skill.icon} skillName={skill.name}
+    const skillItems = skills.map(skill => <Skill skillIcon={skill.icon}
+                                                  key={skill.name}
+                                                  skillName={skill.name}
                                                   description={skill.description}/>)
 
     return (
