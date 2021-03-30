@@ -44,6 +44,7 @@
     padding-right: 100px;
 }
 
+
 @media screen and (max-width: 669px) {
     .aboutWrapper {
         width: 100%;
@@ -54,11 +55,13 @@
         justify-items: center;
         justify-content: center;
     }
+
     .profilePhoto {
         max-width: 400px;
         padding: 0;
         margin: 0;
     }
+
     /*.photoWrapper {*/
     /*    max-width: 400px;*/
     /*}*/
@@ -66,6 +69,7 @@
         padding: 0 15px;
     }
 }
+
 @media screen and (max-width: 410px) {
     .profilePhoto {
         max-width: 250px;

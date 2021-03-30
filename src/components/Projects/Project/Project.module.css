@@ -16,3 +16,18 @@
 .projectDescription {
 
 }
+
+
+.projectLogo {
+    position: relative;
+}
+
+.projectLogo a {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    border: 1px solid red;
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+}
