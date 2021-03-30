@@ -1,19 +1,22 @@
 body, html {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
 
+* {
+    box-sizing: border-box;
 }
 
 .contentWrapper {
     width: 60%;
-    margin: 0 auto 0.6rem;
-    border: 1px solid;
+    margin: 0 auto;
+    border: 1px solid green;
+    height: 100%;
 
 }
 
-@media screen and (max-width: 638px) {
+@media screen and (max-width: 750px) {
     .contentWrapper {
-        /*margin: 0;*/
-
+       width: 80%;
     }
 }

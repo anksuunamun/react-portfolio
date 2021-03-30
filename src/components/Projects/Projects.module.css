@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 465px) {
     .projectsWrapper {
-        width: 100%;
+        /*width: 100%;*/
     }
 }
 @media screen and (max-width: 1807px) {
