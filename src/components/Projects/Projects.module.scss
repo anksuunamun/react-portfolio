@@ -1,0 +1,21 @@
+.projectsWrapper {
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+
+  .projectItems {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    @media screen and (max-width: 1807px) {
+      justify-content: center;
+    }
+  }
+}
+
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import photo from '../../assets/images/photo.jpg';
-import styles from './About.module.css';
+import styles from './About.module.scss';
 import linkedinLogo from '../../assets/images/linkedin-draw-logo.png'
 
 const About = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skills.module.css';
+import styles from './Skills.module.scss';
 import Skill from "./Skill/Skill";
 import reduxLogo from '../../assets/images/redux-cover-imgage-1024x768.jpg';
 import reactLogo from '../../assets/images/react-logo.png';

@@ -1,0 +1,37 @@
+.projectWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border: 1px solid;
+  align-items: center;
+  min-height: 380px;
+  padding: 20px;
+  text-align: center;
+
+  .projectLogo {
+    position: relative;
+  }
+
+  .projectLogo img {
+    max-width: 200px;
+  }
+
+  .projectLogo a {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    border: 1px solid red;
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+  }
+
+  .projectDescription {
+
+  }
+}
+
+
+
+
+

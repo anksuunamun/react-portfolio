@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Projects.module.css';
+import styles from './Projects.module.scss';
 import sonetLogo from '../../assets/images/sonetLogo.PNG';
 import todoLogo from '../../assets/images/todo.PNG';
 import Project from "./Project/Project";
