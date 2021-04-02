@@ -2,9 +2,6 @@
   background-color: #1f1f1f;
   height: 20rem;
 
-  .footerContent h2 {
-    color: #FFF;
-  }
 
   .footerContent {
     display: flex;
@@ -12,6 +9,10 @@
     height: 300px;
     justify-content: space-evenly;
     align-items: center;
+
+    h2 {
+      color: #FFF;
+    }
 
     .footerContacts {
       color: #FFF;

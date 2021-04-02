@@ -1,0 +1,13 @@
+@import "./src/common/styles/sass/variables";
+
+.title {
+  color: $primaryTextColor;
+  //margin: 0 0 24px;
+  font-family: $TitleFontFamily;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+  font-size: 3rem;
+}

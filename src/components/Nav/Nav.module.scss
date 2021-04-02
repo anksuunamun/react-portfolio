@@ -13,11 +13,11 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-decoration: none;
-  }
 
-  .navLinks:hover {
-    border-bottom: 1px solid #1f1f1f;
-    opacity: 0.7;
+    &:hover {
+      border-bottom: 1px solid #1f1f1f;
+      opacity: 0.7;
+    }
   }
 
   .activeLinkStyle {

@@ -4,6 +4,7 @@ import Skill from "./Skill/Skill";
 import reduxLogo from '../../assets/images/redux-cover-imgage-1024x768.jpg';
 import reactLogo from '../../assets/images/react-logo.png';
 import typescript from '../../assets/images/1_TpbxEQy4ckB-g31PwUQPlg.png';
+import Title from "../../common/components/Title/Title";
 
 const Skills = (props) => {
     const skills = [
@@ -30,7 +31,7 @@ const Skills = (props) => {
     return (
         <div className={`${styles.skillsWrapper}`}>
             <div className={`contentWrapper ${styles.skillBlock}`}>
-                <h2>My Skills</h2>
+                <Title title={'My Skills'}/>
                 <div className={styles.skills}>{skillItems}</div>
             </div>
         </div>

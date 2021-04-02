@@ -1,12 +1,13 @@
 import React from "react";
 import styles from './Contacts.module.scss';
+import Title from "../../common/components/Title/Title";
 
 const Contacts = () => {
     return (
         <div className={styles.contactsWrapper}>
             <div className={`contentWrapper`}>
                 <div className={styles.contactsContent}>
-                    <h2>Contacts</h2>
+                    <Title title={'Contacts'}/>
                     <form action={'/'} method={'post'} className={styles.formWrapper}>
                         <label htmlFor="name"/>
                         <input type="text" id={'name'}/>

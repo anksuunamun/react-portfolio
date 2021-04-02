@@ -3,6 +3,7 @@ import styles from './Projects.module.scss';
 import sonetLogo from '../../assets/images/sonetLogo.PNG';
 import todoLogo from '../../assets/images/todo.PNG';
 import Project from "./Project/Project";
+import Title from "../../common/components/Title/Title";
 
 const Projects = () => {
 
@@ -27,7 +28,7 @@ const Projects = () => {
 
     return (
         <div className={`${styles.projectsWrapper} contentWrapper`}>
-            <h2>My projects</h2>
+            <Title title={'My projects'}/>
             <div className={styles.projectItems}>
                 {projectsForRender}
             </div>
