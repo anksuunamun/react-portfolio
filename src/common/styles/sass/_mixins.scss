@@ -9,6 +9,7 @@
   text-rendering: optimizeLegibility;
   word-break: break-word;
   font-size: $fontSize;
+  margin: 0;
 }
 
 @mixin commonParagraphStyles() {
@@ -20,4 +21,18 @@
   text-rendering: optimizeLegibility;
   font-weight: 400;
   hyphens: auto;
+}
+
+@mixin commonH6Styles() {
+  font-size: 14px;
+  letter-spacing: 2.1px;
+  margin-bottom: 8px;
+  color: $secondaryTextColor;
+  font-weight: 600;
+  font-family: $TitleFontFamily;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+  text-transform: uppercase;
+  margin-top: 0;
 }
