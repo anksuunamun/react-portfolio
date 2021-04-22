@@ -1,0 +1,23 @@
+@import "./src/common/styles/sass/variables";
+
+@mixin commonHeaderStyles($fontSize) {
+  color: $primaryTextColor;
+  font-family: $TitleFontFamily;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
+  font-size: $fontSize;
+}
+
+@mixin commonParagraphStyles() {
+  font-family: $TitleFontFamily;
+  font-size: 16px;
+  color: $secondaryTextColor;
+  line-height: 1.67;
+  word-break: break-word;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  hyphens: auto;
+}
