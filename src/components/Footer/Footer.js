@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className={styles.footerContacts}>
                         <div><a href={'https://www.linkedin.com/in/vvgorelova/'}>Linkedin</a></div>
                         <div><a href={'https://github.com/anksuunamun'}>Github</a></div>
-                        <div><a href={'#'}>Facebook</a></div>
+                        <div><a href={'https://t.me/anksuunamun'}>Telegram</a></div>
                     </div>
                     <div className={styles.line}/>
                     <div className={styles.footerBottom}>
