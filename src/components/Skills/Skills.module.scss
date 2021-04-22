@@ -1,8 +1,22 @@
+@import "./src/common/styles/sass/mixins";
+
 .skillsWrapper {
   background-color: #f7f8f9;
-  min-height: 23rem;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  min-height: 639px;
+  padding-top: 106px;
+  padding-bottom: 76px;
+
+  h6 {
+    @include commonH6Styles();
+    text-align: center;
+  }
+
+  .headersWrapper {
+    margin-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .skillBlock {
     display: flex;
@@ -10,16 +24,18 @@
     justify-content: space-between;
     height: 100%;
     align-items: center;
-
-
   }
 
   .skills {
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 750px) {
+      grid-template-columns: 1fr;
+    }
     @media screen and (max-width: 906px) {
       justify-content: center;
     }

@@ -1,20 +1,40 @@
-.skillWrapper {
-  max-width: 270px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 200px;
-  align-items: center;
-  text-align: center;
-  border: 1px solid black;
-  padding: 10px 0;
+@import "./src/common/styles/sass/variables";
+@import "./src/common/styles/sass/mixins";
 
-  .skillImg img {
-    width: 100px;
+.skillWrapper {
+  max-width: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 116px;
+  align-items: flex-start;
+  //border: 1px solid black;
+  margin: 0 20px 40px;
+  @media screen and (max-width: 1023px) {
+    max-width: 442px;
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 750px) {
+    max-width: 660px;
   }
 
-  .skillName {
+  .skill {
+    height: 100%;
+    max-width: 280px;
+    margin-left: 24px;
+  }
 
+  img {
+    width: 46px;
+  }
+
+  h4 {
+    @include commonHeaderStyles(24px);
+    margin: 0 0 10px;
+  }
+
+  .skillDescription {
+    @include commonParagraphStyles();
   }
 }
 
