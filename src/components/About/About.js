@@ -1,7 +1,9 @@
 import React from 'react';
 import photo from '../../assets/images/photo.jpg';
 import styles from './About.module.scss';
-import linkedinLogo from '../../assets/images/linkedin-draw-logo.png'
+import linkedinLogo from '../../assets/images/linkedin.svg'
+import gitLogo from '../../assets/images/github.svg';
+import telegram from '../../assets/images/telegram.svg';
 import Title from "../../common/components/Title/Title";
 
 const About = () => {
@@ -24,8 +26,18 @@ const About = () => {
                     neque pariatur ratione.</p>
                 <div className={styles.followWrapper}>
                     <h3>Follow me</h3>
-                    <a href="https://www.linkedin.com/in/vvgorelova/">
-                        <img src={linkedinLogo} alt="" className={styles.icon}/></a>
+                    <div className={styles.links}>
+                        <a href="https://www.linkedin.com/in/vvgorelova">
+                            <img src={linkedinLogo} alt="" className={styles.icon}/>
+                        </a>
+                        <a href="https://github.com/anksuunamun">
+                            <img src={gitLogo} alt="" className={styles.icon}/>
+                        </a>
+                        <a href="https://t.me/anksuunamun">
+                            <img src={telegram} alt="" className={styles.icon}/>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
