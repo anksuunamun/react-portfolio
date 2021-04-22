@@ -7,15 +7,26 @@ const Contacts = () => {
         <div className={styles.contactsWrapper}>
             <div className={`contentWrapper`}>
                 <div className={styles.contactsContent}>
-                    <Title title={'Contacts'}/>
+                    <div>
+                        <h6>You can write me here</h6>
+                        <Title title={'Contacts'}/>
+                    </div>
                     <form action={'/'} method={'post'} className={styles.formWrapper}>
                         <label htmlFor="name"/>
-                        <input type="text" id={'name'}/>
+                        <input type="text"
+                               id={'name'}
+                               placeholder={'Name'}/>
                         <label htmlFor="{'surname'}"/>
-                        <input type="text" id={'surname'}/>
+                        <input type="text"
+                               id={'surname'}
+                               placeholder={'Email'}/>
                         <label htmlFor="message"/>
-                        <textarea name="" id="message" cols="30" rows="5"/>
-                        <button type={"submit"}>Send</button>
+                        <textarea name=""
+                                  id="message"
+                                  cols="30"
+                                  rows="5"
+                                  placeholder={'Write your message here...'}/>
+                        <button type={"submit"}><span>Send</span></button>
                     </form>
                 </div>
             </div>

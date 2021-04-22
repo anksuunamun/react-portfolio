@@ -1,9 +1,37 @@
+@import "./src/common/styles/sass/variables";
+@import "./src/common/styles/sass/mixins";
+
 .contactsWrapper {
-  height: 27rem;
-  border: 1px solid;
+  min-height: 600px;
   background-color: #f7f8f9;
   padding-top: 70px;
   padding-bottom: 40px;
+
+  h6 {
+    @include commonH6Styles();
+  }
+
+  button {
+    background-color: $primaryTextColor;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 22px 46px;
+    font-family: $TitleFontFamily;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .25em;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    span:hover {
+      opacity: 0.9;
+    }
+  }
 
   .contactsContent {
     display: flex;
@@ -18,13 +46,38 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid;
       padding: 10px;
       width: 80%;
-      height: 100%;
+      min-height: 300px;
+      margin-top: 48px;
 
       input, textarea {
         width: 80%;
+        border: 1px solid $secondaryTextColor;
+        font-family: $TitleFontFamily;
+        font-size: 16px;
+        color: $primaryTextColor;
+        line-height: 1.67;
+        word-break: break-word;
+        text-rendering: optimizeLegibility;
+        font-weight: 600;
+        hyphens: auto;
+      }
+
+      input {
+        height: 35px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        height: 70px;
+
+        &:focus {
+          outline: none;
+        }
       }
     }
   }

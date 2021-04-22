@@ -10,7 +10,7 @@ body, html {
 .contentWrapper {
     max-width: 1140px;
     margin: 0 auto;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     height: 100%;
 
 }
