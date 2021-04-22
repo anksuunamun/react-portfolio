@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Projects.module.scss';
 import sonetLogo from '../../assets/images/sonetLogo.PNG';
 import todoLogo from '../../assets/images/todo.PNG';
+import quizLogo from '../../assets/images/hearMeRoar.PNG';
 import Project from "./Project/Project";
 import Title from "../../common/components/Title/Title";
 
@@ -11,12 +12,20 @@ const Projects = () => {
         {
             projectLogo: sonetLogo,
             name: 'Social Network',
-            description: 'Social Network is a single page application, which contains all base functionality of modern social networks. It works with server API to provide user all data about him and other users. You can interact with other users (for example, you can follow/unfollow somebody) and you can change information about yourself in your profile.',
+            projectUrl: 'https://github.com/anksuunamun/social-network-ts',
+            description: 'Social Network is a single page application, which contains all base functionality of modern social networks.',
         },
         {
             projectLogo: todoLogo,
             name: 'Todo list',
-            description: 'Todolist is a single page application. It is an analogue of popular project management system Trello. You can create, delete and edit your todo lists here.',
+            projectUrl: 'https://github.com/anksuunamun/todolist-ts',
+            description: 'Todolist is a single page application. It is an analogue of popular project management system Trello.',
+        },
+        {
+            projectLogo: quizLogo,
+            name: 'Animal voices quiz',
+            projectUrl: 'https://github.com/anksuunamun/animal-voices-quiz',
+            description: 'SPA, recognizing animals by their voices quiz.',
         },
     ]
 
@@ -24,11 +33,15 @@ const Projects = () => {
         projectLogo={pr.projectLogo}
         name={pr.name}
         key={pr.name}
-        description={pr.description}/>)
+        description={pr.description}
+        projectUrl={pr.projectUrl}/>)
 
     return (
         <div className={`${styles.projectsWrapper} contentWrapper`}>
-            <Title title={'My projects'}/>
+            <div className={styles.headersWrapper}>
+                <h6>featured works</h6>
+                <Title title={'My projects'}/>
+            </div>
             <div className={styles.projectItems}>
                 {projectsForRender}
             </div>

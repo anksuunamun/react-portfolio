@@ -6,10 +6,11 @@ const Project = (props) => {
     return (
         <div className={styles.projectWrapper}>
             <div className={styles.projectLogo}>
-                <img src={props.projectLogo} alt="projectLogo"/>
-                <a href="#">Show</a>
+                <a href={props.projectUrl}>
+                    <img src={props.projectLogo} alt="projectLogo"/>
+                </a>
             </div>
-            <h3>{props.name}</h3>
+            <h4>{props.name}</h4>
             <div className={styles.projectDescription}>{props.description}</div>
         </div>
     )

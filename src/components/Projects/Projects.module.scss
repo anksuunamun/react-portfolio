@@ -1,3 +1,5 @@
+@import "./src/common/styles/sass/mixins";
+
 .projectsWrapper {
   min-height: 35rem;
   display: flex;
@@ -5,17 +7,44 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 60px;
+  margin-top: 110px;
+  margin-bottom: 90px;
+
+  h6 {
+    @include commonH6Styles();
+  }
+
+  .headersWrapper {
+    margin-bottom: 48px;
+    align-self: flex-start;
+  }
 
   .projectItems {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
     @media screen and (max-width: 1807px) {
       justify-content: center;
     }
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 30px;
+      grid-template-areas: "social todo"
+                           "quiz .";
+    }
+    @media screen and (max-width: 750px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "social"
+                           "todo"
+                           "quiz";
+      justify-items: center;
+    }
   }
+
 }
 
 
