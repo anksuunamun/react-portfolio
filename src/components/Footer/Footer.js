@@ -8,13 +8,20 @@ const Footer = () => {
                 <div className={styles.footerContent}>
                     <h2>Veronika Gorelova</h2>
                     <div className={styles.footerContacts}>
-                        <div>Linkedin</div>
-                        <div>Github</div>
-                        <div>Facebook</div>
+                        <div><a href={'https://www.linkedin.com/in/vvgorelova/'}>Linkedin</a></div>
+                        <div><a href={'https://github.com/anksuunamun'}>Github</a></div>
+                        <div><a href={'#'}>Facebook</a></div>
                     </div>
-                    <div className={styles.copyright}>
-                        © 2021 All Rights Reserved.
+                    <div className={styles.line}/>
+                    <div className={styles.footerBottom}>
+                        <div className={styles.toTopBlock}>
+                            Back to top
+                        </div>
+                        <div className={styles.copyright}>
+                            © 2021 All Rights Reserved.
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
