@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className={styles.line}/>
                     <div className={styles.footerBottom}>
                         <div className={styles.toTopBlock}>
-                            Back to top
+                            <a href="#toTop">Back to top</a>
                         </div>
                         <div className={styles.copyright}>
                             © 2021 All Rights Reserved.

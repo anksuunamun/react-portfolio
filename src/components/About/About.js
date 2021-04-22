@@ -11,7 +11,7 @@ const About = () => {
                 <img className={styles.profilePhoto} src={photo} alt="profilePhoto"/>
             </div>
             <div className={styles.aboutInfo}>
-                <Title title={'Hello! I\'m Veronika Gorelova, a frontend developer.'}/>
+                <a id="about"> <Title title={'Hello! I\'m Veronika Gorelova, a frontend developer.'}/></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus ea incidunt itaque
                     laborum
                     recusandae rerum tempora vel velit vitae! Aliquam animi autem dignissimos eligendi eveniet

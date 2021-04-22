@@ -6,6 +6,10 @@
   padding-top: 106px;
   padding-bottom: 76px;
 
+  a {
+    text-decoration: none;
+  }
+
   h6 {
     @include commonH6Styles();
     text-align: center;

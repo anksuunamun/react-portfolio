@@ -52,7 +52,7 @@ const Skills = (props) => {
             <div className={`contentWrapper ${styles.skillBlock}`}>
                 <div className={styles.headersWrapper}>
                     <h6>libraries, programming languages & tools</h6>
-                    <Title title={'My Skills'}/>
+                    <a id="skills"><Title title={'My Skills'}/></a>
                 </div>
                 <div className={styles.skills}>{skillItems}</div>
             </div>

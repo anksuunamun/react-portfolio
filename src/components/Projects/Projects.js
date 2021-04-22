@@ -40,7 +40,7 @@ const Projects = () => {
         <div className={`${styles.projectsWrapper} contentWrapper`}>
             <div className={styles.headersWrapper}>
                 <h6>featured works</h6>
-                <Title title={'My projects'}/>
+                <a id="projects"><Title title={'My projects'}/></a>
             </div>
             <div className={styles.projectItems}>
                 {projectsForRender}

@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
     return (
         <div className="App">
+            <a id="toTop" />
             <Header/>
             <About/>
             <Skills/>

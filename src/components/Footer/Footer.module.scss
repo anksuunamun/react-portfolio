@@ -31,9 +31,11 @@
       @media screen and (max-width: 382px) {
         width: 100%;
       }
+
       a {
         color: white;
         text-decoration: none;
+
         &:hover {
           opacity: 0.8;
         }
@@ -56,18 +58,23 @@
       }
 
       .toTopBlock {
-        color: #A3A4A4;
-        font-size: .8125rem;
-        letter-spacing: .15em;
-        font-weight: 600;
-        text-transform: uppercase;
-        border-bottom: 1px solid $secondaryTextColor;
 
-        &:hover {
-          color: white;
-          cursor: pointer;
-          border-bottom: 1px solid white;
-          transition: 0.4s;
+
+        a {
+          text-decoration: none;
+          color: #A3A4A4;
+          font-size: .8125rem;
+          letter-spacing: .15em;
+          font-weight: 600;
+          text-transform: uppercase;
+          border-bottom: 1px solid $secondaryTextColor;
+
+          &:hover {
+            color: white;
+            cursor: pointer;
+            border-bottom: 1px solid white;
+            transition: 0.4s;
+          }
         }
       }
     }

@@ -9,7 +9,7 @@ const Contacts = () => {
                 <div className={styles.contactsContent}>
                     <div>
                         <h6>You can write me here</h6>
-                        <Title title={'Contacts'}/>
+                        <a id="contacts"><Title title={'Contacts'}/></a>
                     </div>
                     <form action={'/'} method={'post'} className={styles.formWrapper}>
                         <label htmlFor="name"/>
