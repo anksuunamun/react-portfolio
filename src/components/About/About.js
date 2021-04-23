@@ -4,6 +4,7 @@ import styles from './About.module.scss';
 import linkedinLogo from '../../assets/images/linkedin.svg'
 import gitLogo from '../../assets/images/github.svg';
 import telegram from '../../assets/images/telegram.svg';
+import codewars from '../../assets/images/codewars-svgrepo-com.svg';
 import Title from "../../common/components/Title/Title";
 
 const About = () => {
@@ -14,16 +15,10 @@ const About = () => {
             </div>
             <div className={styles.aboutInfo}>
                 <a id="about"> <Title title={'Hello! I\'m Veronika Gorelova, a frontend developer.'}/></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus ea incidunt itaque
-                    laborum
-                    recusandae rerum tempora vel velit vitae! Aliquam animi autem dignissimos eligendi eveniet
-                    laborum
-                    neque pariatur ratione.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus ea incidunt itaque
-                    laborum
-                    recusandae rerum tempora vel velit vitae! Aliquam animi autem dignissimos eligendi eveniet
-                    laborum
-                    neque pariatur ratione.</p>
+                <p>I'm a frontend developer with experience in creating SPA using React, Redux, Typescript.</p>
+                <p>I'm planning to study Vue.js and Angular, beacause I have a strong passion for frontend and for
+                    programming at all.
+                    I enjoy spending free time with programming tutorials or on Codewars.</p>
                 <div className={styles.followWrapper}>
                     <h3>Follow me</h3>
                     <div className={styles.links}>
@@ -35,6 +30,9 @@ const About = () => {
                         </a>
                         <a href="https://t.me/anksuunamun">
                             <img src={telegram} alt="" className={styles.icon}/>
+                        </a>
+                        <a href="https://www.codewars.com/users/veronika-g">
+                            <img src={codewars} alt="" className={styles.icon}/>
                         </a>
                     </div>
 
