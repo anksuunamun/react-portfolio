@@ -13,7 +13,7 @@ const Contacts = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://react-portfolio-nodejs-server.herokuapp.com/sendMessage', {
+        axios.post('https://cors-anywhere.herokuapp.com/https://react-portfolio-nodejs-server.herokuapp.com/sendMessage', {
             // axios.post('http://localhost:3010/sendMessage', {
             name, email, message
         }, {
