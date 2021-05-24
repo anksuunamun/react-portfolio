@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.f53885e7.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.e3371d4a.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.e3371d4a.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.f7f662b9.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.f7f662b9.js.map",
-    "static/js/2.a4d58a7a.chunk.js": "/react-portfolio/static/js/2.a4d58a7a.chunk.js",
-    "static/js/2.a4d58a7a.chunk.js.map": "/react-portfolio/static/js/2.a4d58a7a.chunk.js.map",
-    "static/js/3.e49ea4f1.chunk.js": "/react-portfolio/static/js/3.e49ea4f1.chunk.js",
-    "static/js/3.e49ea4f1.chunk.js.map": "/react-portfolio/static/js/3.e49ea4f1.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.69788c3d.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.69788c3d.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.b3cdd082.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.b3cdd082.js.map",
+    "static/js/2.b2e716e9.chunk.js": "/react-portfolio/static/js/2.b2e716e9.chunk.js",
+    "static/js/2.b2e716e9.chunk.js.map": "/react-portfolio/static/js/2.b2e716e9.chunk.js.map",
+    "static/js/3.998a3f31.chunk.js": "/react-portfolio/static/js/3.998a3f31.chunk.js",
+    "static/js/3.998a3f31.chunk.js.map": "/react-portfolio/static/js/3.998a3f31.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/main.f53885e7.chunk.css.map": "/react-portfolio/static/css/main.f53885e7.chunk.css.map",
-    "static/js/2.a4d58a7a.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.a4d58a7a.chunk.js.LICENSE.txt",
+    "static/js/2.b2e716e9.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.b2e716e9.chunk.js.LICENSE.txt",
     "static/media/ClipartKey_1582958.83d299d0.png": "/react-portfolio/static/media/ClipartKey_1582958.83d299d0.png",
     "static/media/codewars-svgrepo-com.89fb91ea.svg": "/react-portfolio/static/media/codewars-svgrepo-com.89fb91ea.svg",
     "static/media/github.146e30eb.svg": "/react-portfolio/static/media/github.146e30eb.svg",
@@ -27,9 +27,9 @@
     "static/media/tsLogo.39f0ccbd.webp": "/react-portfolio/static/media/tsLogo.39f0ccbd.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7f662b9.js",
-    "static/js/2.a4d58a7a.chunk.js",
+    "static/js/runtime-main.b3cdd082.js",
+    "static/js/2.b2e716e9.chunk.js",
     "static/css/main.f53885e7.chunk.css",
-    "static/js/main.e3371d4a.chunk.js"
+    "static/js/main.69788c3d.chunk.js"
   ]
 }
