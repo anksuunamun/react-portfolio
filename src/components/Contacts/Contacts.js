@@ -14,7 +14,15 @@ const Contacts = () => {
     const onFormSubmit = (e) => {
         e.preventDefault();
         axios.post('https://react-portfolio-nodejs-server.herokuapp.com/sendMessage', {
+            // axios.post('http://localhost:3010/sendMessage', {
             name, email, message
+        }, {
+            headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Credentials": true,
+                "Access-Control-Allow-Methods": 'GET,PUT,POST,DELETE,OPTIONS',
+                "Access-Control-Allow-Headers": 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json'
+            }
         })
             .then(() => {
                 alert("Thank you! Your message has been sent.");
