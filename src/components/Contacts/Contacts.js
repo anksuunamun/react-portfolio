@@ -13,14 +13,16 @@ const Contacts = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3010/sendMessage', {
+        axios.post('https://react-portfolio-nodejs-server.herokuapp.com/sendMessage', {
             name, email, message
-        }).then(() => {
-            alert("Thank you! Your message has been sent.");
-            setName('');
-            setEmail('');
-            setMessage('');
         })
+            .then(() => {
+                alert("Thank you! Your message has been sent.");
+                setName('');
+                setEmail('');
+                setMessage('');
+            })
+            .catch(error => alert('Sorry, message not sent.'))
     }
 
     return (
