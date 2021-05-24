@@ -5,6 +5,7 @@ import todoLogo from '../../assets/images/todo.PNG';
 import quizLogo from '../../assets/images/hearMeRoar.PNG';
 import Project from "./Project/Project";
 import Title from "../../common/components/Title/Title";
+import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
 
@@ -38,10 +39,12 @@ const Projects = () => {
 
     return (
         <div className={`${styles.projectsWrapper} contentWrapper`}>
-            <div className={styles.headersWrapper}>
-                <h6>featured works</h6>
-                <a id="projects"><Title title={'My projects'}/></a>
-            </div>
+            <Fade left>
+                <div className={styles.headersWrapper}>
+                    <h6>featured works</h6>
+                    <a id="projects"><Title title={'My projects'}/></a>
+                </div>
+            </Fade>
             <div className={styles.projectItems}>
                 {projectsForRender}
             </div>

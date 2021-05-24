@@ -8,7 +8,7 @@ import jsLogo from '../../assets/images/javascript.svg';
 import storyLogo from '../../assets/images/storybook_logo_icon_144839.png';
 import axiosLogo from '../../assets/images/ClipartKey_1582958.png';
 import Title from "../../common/components/Title/Title";
-
+import Fade from 'react-reveal/Fade';
 
 const Skills = (props) => {
     const skills = [
@@ -50,10 +50,12 @@ const Skills = (props) => {
     return (
         <div className={`${styles.skillsWrapper}`}>
             <div className={`contentWrapper ${styles.skillBlock}`}>
-                <div className={styles.headersWrapper}>
-                    <h6>libraries, programming languages & tools</h6>
-                    <a id="skills"><Title title={'My Skills'}/></a>
-                </div>
+                <Fade left>
+                    <div className={styles.headersWrapper}>
+                        <h6>libraries, programming languages & tools</h6>
+                        <a id="skills"><Title title={'My Skills'}/></a>
+                    </div>
+                </Fade>
                 <div className={styles.skills}>{skillItems}</div>
             </div>
         </div>
