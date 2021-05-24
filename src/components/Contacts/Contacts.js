@@ -1,9 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './Contacts.module.scss';
 import Title from "../../common/components/Title/Title";
 import Fade from 'react-reveal/Fade';
+import axios from 'axios';
+
 
 const Contacts = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const onFormSubmit = (e) => {
+        e.preventDefault();
+        axios.post('http://localhost:3010/sendMessage', {
+            name, email, message
+        }).then(() => {
+            alert("Thank you! Your message has been sent.");
+            setName('');
+            setEmail('');
+            setMessage('');
+        })
+    }
+
     return (
         <div className={styles.contactsWrapper}>
             <div className={`contentWrapper`}>
@@ -15,21 +34,27 @@ const Contacts = () => {
                         </div>
                     </Fade>
                     <Fade left>
-                        <form action={'/'} method={'post'} className={styles.formWrapper}>
+                        <form action={'/'} method={'post'} className={styles.formWrapper} onSubmit={onFormSubmit}>
                             <label htmlFor="name"/>
                             <input type="text"
                                    id={'name'}
-                                   placeholder={'Name'}/>
+                                   placeholder={'Name'}
+                                   value={name}
+                                   onChange={(event) => setName(event.currentTarget.value)}/>
                             <label htmlFor="{'surname'}"/>
                             <input type="text"
                                    id={'surname'}
-                                   placeholder={'Email'}/>
+                                   placeholder={'Email'}
+                                   value={email}
+                                   onChange={(event) => setEmail(event.currentTarget.value)}/>
                             <label htmlFor="message"/>
                             <textarea name=""
                                       id="message"
                                       cols="30"
                                       rows="5"
-                                      placeholder={'Write your message here...'}/>
+                                      placeholder={'Write your message here...'}
+                                      value={message}
+                                      onChange={(event) => setMessage(event.currentTarget.value)}/>
                             <button type={"submit"}><span>Send</span></button>
                         </form>
                     </Fade>
